@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Covid</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-success">
+            Covid-19 Brasil
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <label>Estados</label>
+                <input type="text"/>
+                <button class="mt-2 btn btn primary">Pesquisar</button>
+            </div>
+
+            <div class="col">
+                <h4 id="titulo">Estados com mais óbitos</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><strong>Estado</strong></th>
+                            <th><strong>Casos</strong></th>
+                            <th><strong>Mortes</strong></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="user_table">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function(){   
+            $(".alert").html("App Covid");
+            
+            $(".alert").click(function(){
+                $("#titulo").fadeOut(1000);
+            })
+            
+            $("button").click(function(){
+                let userName = $("input").val();
+            })
+        });
+
+    </script>
+
+</body>
+</html>
