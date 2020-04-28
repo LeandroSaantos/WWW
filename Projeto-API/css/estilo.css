@@ -1,0 +1,21 @@
+.container h1{
+    text-align: center;
+    padding: 20px 40px;
+}
+
+#titulo{
+    background-color: blueviolet;
+    color: cornsilk;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px 15px;
+
+}
+
+@media(min-width: 600px){
+    #titulo{
+        float: left;
+        width: calc(50% - 20px);
+    }
+
+}
